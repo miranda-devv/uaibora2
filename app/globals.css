@@ -1,26 +1,17 @@
+/* Importa Tailwind CSS */
 @import "tailwindcss";
 
+/* Variáveis do site */
 :root {
-  --background: #ffffff;
-  --foreground: #b44a4a;
+  --background: #ffffff;   /* fundo sempre claro */
+  --foreground: #181515;   /* texto escuro */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #e0dbd9;
-    --foreground: #a12424;
-  }
-}
-
+/* Corpo da página */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background); /* fundo sempre claro */
+  color: var(--foreground);            /* texto escuro */
+  font-family: inherit;                /* usa Poppins do RootLayout */
+  margin: 20px;
+  padding: 40px;
 }

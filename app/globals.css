@@ -1,17 +1,15 @@
-/* Importa Tailwind CSS */
 @import "tailwindcss";
 
-/* Variáveis do site */
 :root {
-  --background: #ffffff;   /* fundo sempre claro */
-  --foreground: #181515;   /* texto escuro */
+  --background: #ffffff;   
+  --foreground: #181515;   
 }
 
 /* Corpo da página */
 body {
-  background-color: var(--background); /* fundo sempre claro */
-  color: var(--foreground);            /* texto escuro */
-  font-family: inherit;                /* usa Poppins do RootLayout */
+  background-color: var(--background); 
+  color: var(--foreground);            
+  font-family: inherit;                
   margin: 20px;
   padding: 40px;
 }

@@ -31,8 +31,8 @@ export default function LoginPage() {
           {/* 🧭 TELA INICIAL */}
           {tela === "inicio" && (
             <>
-              <h2 className="text-3xl font-bold text-center mb-6">Bora...?</h2>
-              <p className="text-center text-gray-400 mt-2">
+              <h2 className="text-3xl font-bold text-center mb-=2">Bora...?</h2>
+              <p className="text-center text-gray-400 mt-20">
                   Acesse sua conta
                 </p>
 

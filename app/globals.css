@@ -1,8 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;   
-  --foreground: #181515;   
+  /* Warm Black for background to avoid blueish tones */
+  --background: #0a0908;   
+  --foreground: #f8fafc;   
+  --primary-orange: #f97316;
+  --primary-red: #dc2626;
+  --accent-gold: #fbbf24;
 }
 
 /* Corpo da página */

@@ -1,0 +1,105 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum PapelUsuario {
+  COMUM
+  PROPRIETARIO
+  ADMIN
+}
+
+enum StatusLocal {
+  PENDENTE
+  APROVADO
+  REJEITADO
+}
+
+enum CategoriaLocal {
+  CULTURA
+  GASTRONOMIA
+  LAZER
+  NOITE
+  NATUREZA
+  PASSEIO
+}
+
+enum TipoEntidade {
+  LOCAL
+  EVENTO
+}
+
+enum TipoInteracao {
+  FAVORITOU
+  TENHO_INTERESSE
+  CHECK_IN
+}
+
+model Usuario {
+  id        String       @id @default(uuid())
+  nome      String
+  email     String       @unique
+  senhaHash String
+  perfil    PapelUsuario @default(COMUM)
+  criadoEm  DateTime     @default(now())
+
+  locaisSugeridos Local[]            @relation("SugeridoPor")
+  locaisGestao    Local[]            @relation("Proprietario")
+  interacoes      InteracaoUsuario[]
+
+  @@map("usuarios")
+}
+
+model Local {
+  id              String          @id @default(uuid())
+  nome            String
+  descricao       String?
+  categoria       CategoriaLocal?
+  latitude        Decimal?        @db.Decimal(9, 6)
+  longitude       Decimal?        @db.Decimal(9, 6)
+  statusAprovacao StatusLocal     @default(PENDENTE)
+  sugeridoPorId   String?
+  proprietarioId  String?
+  criadoEm        DateTime        @default(now())
+
+  sugeridoPor  Usuario? @relation("SugeridoPor", fields: [sugeridoPorId], references: [id])
+  proprietario Usuario? @relation("Proprietario", fields: [proprietarioId], references: [id])
+  eventos      Evento[]
+
+  @@index([statusAprovacao])
+  @@index([categoria])
+  @@index([criadoEm])
+  @@map("locais")
+}
+
+
+model Evento {
+  id         String   @id @default(uuid())
+  localId    String
+  titulo     String
+  descricao  String?
+  dataInicio DateTime
+  dataFim    DateTime
+  criadoEm   DateTime @default(now())
+
+  local Local @relation(fields: [localId], references: [id], onDelete: Cascade)
+
+  @@map("eventos")
+}
+
+model InteracaoUsuario {
+  id            String        @id @default(uuid())
+  usuarioId     String
+  entidadeId    String
+  tipoEntidade  TipoEntidade
+  tipoInteracao TipoInteracao
+  criadoEm      DateTime      @default(now())
+
+  usuario Usuario @relation(fields: [usuarioId], references: [id], onDelete: Cascade)
+
+  @@map("interacoes_usuarios")
+}

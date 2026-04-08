@@ -1,7 +1,22 @@
 services:
+  db:
+    image: postgres:16-alpine
+    container_name: uaibora_db
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: uaibora
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
   uaibora2:
     build: .
     container_name: uaibora2_container
+    depends_on:
+      - db
     ports:
       - "3000:3000"
     volumes:
@@ -9,4 +24,23 @@ services:
       - /app/node_modules
     environment:
       - WATCHPACK_POLLING=true
+      - DATABASE_URL=postgresql://user:password@db:5432/uaibora
     command: npm run dev
+
+  backend:
+    build: .
+    container_name: uaibora_backend
+    depends_on:
+      - db
+    ports:
+      - "3333:3333"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - DATABASE_URL=postgresql://user:password@db:5432/uaibora
+      - PORT=3333
+    command: npx tsx Backend/server.ts
+
+volumes:
+  postgres_data:

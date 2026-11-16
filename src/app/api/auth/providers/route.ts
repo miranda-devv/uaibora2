@@ -1,0 +1,2 @@
+import { supabaseConfig } from '@/lib/supabase/config';
+export async function GET(){const c=supabaseConfig();if(!c)return Response.json({google:false},{status:503});try{const r=await fetch(c.url+'/auth/v1/settings',{headers:{apikey:c.key},cache:'no-store',signal:AbortSignal.timeout(8000)});const data=await r.json();return Response.json({google:r.ok&&data.external?.google===true},{headers:{'Cache-Control':'no-store'}});}catch{return Response.json({google:false},{status:503});}}

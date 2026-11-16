@@ -1,0 +1,21 @@
+import { NextResponse, type NextRequest } from "next/server";
+import { getServerSupabase } from "@/lib/supabase/server";
+import type { EmailOtpType } from "@supabase/supabase-js";
+
+export async function GET(request: NextRequest) {
+  const params = request.nextUrl.searchParams;
+  const client = await getServerSupabase();
+  const tokenHash = params.get("token_hash");
+  const type = params.get("type");
+  const code = params.get("code");
+  if (client) {
+    if (tokenHash && type && ["signup", "email", "magiclink", "recovery"].includes(type)) {
+      const {error} = await client.auth.verifyOtp({ token_hash: tokenHash, type: type as EmailOtpType });
+      if (!error) return NextResponse.redirect(new URL(type === "recovery" ? "/?auth=recovery" : "/?auth=confirmed", request.url));
+    } else if (code) {
+      const {error} = await client.auth.exchangeCodeForSession(code);
+      if (!error) return NextResponse.redirect(new URL(params.get("flow") === "recovery" ? "/?auth=recovery" : "/?auth=confirmed", request.url));
+    }
+  }
+  return NextResponse.redirect(new URL("/?auth=error", request.url));
+}

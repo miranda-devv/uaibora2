@@ -1,0 +1,450 @@
+{
+  "sources": {
+    "fna": "https://portalbelohorizonte.com.br/eventos/feira/artesanato/37a-feira-nacional-de-artesanato",
+    "foz": "https://portalbelohorizonte.com.br/eventos/exposicao/artes-visuais/exposicao-foz-do-contato",
+    "bienal": "https://bienal.org.br/agenda/itinerancia-36a-bienal-belo-horizonte/",
+    "japao": "https://portalbelohorizonte.com.br/eventos/festival/cultural/mostra-japao-2026",
+    "africa": "https://portalbelohorizonte.com.br/eventos/festival/cultural/fest-brasil-africa-em-belo-horizonte",
+    "pindorama": "https://portalbelohorizonte.com.br/eventos/feira/gastronomia/feira-pindorama",
+    "hippie": "https://portalbelohorizonte.com.br/o-que-fazer/comer-e-beber/feira/feira-de-artes-artesanato-e-produtores-de-variedades-de-belo-horizonte",
+    "som": "https://portalbelohorizonte.com.br/eventos/show/musica/festival-som-clube-2026-edicao-localiza",
+    "local-expominas": "https://portalbelohorizonte.com.br/trade/equipamentos-e-servicos/centro-de-convencao-espaco-multiuso-pavilhao-parque-de-exposicao-acessibilidade/expominas-bh",
+    "local-ufmg": "https://www.ufmg.br/procult/espacos-de-cultura/centro-cultural-ufmg/",
+    "local-papa": "https://portalbelohorizonte.com.br/o-que-fazer/ao-ar-livre-e-esportes/pracas/praca-israel-pinheiro-praca-do-papa",
+    "local-sesc": "https://sescmg.com.br/servico/shows-e-espetaculos-no-sesc-palladium/"
+  },
+  "places": [
+    {
+      "title": "Expominas BH",
+      "category": "Espaço de eventos",
+      "location": "Avenida Amazonas, 6200, Gameleira, Belo Horizonte",
+      "description": "Pavilhão de feiras e eventos. A entrada e os horários variam por programação; consulte cada evento.",
+      "image_path": "/images/editorial-local-expominas.webp",
+      "info": {
+        "price": "unknown",
+        "priceNote": "Consulte as condições de cada atividade; consumo e compras à parte.",
+        "hours": "Funcionamento conforme programação. Confira a fonte oficial.",
+        "tags": [
+          "Cultura"
+        ],
+        "sourceUrl": "https://portalbelohorizonte.com.br/trade/equipamentos-e-servicos/centro-de-convencao-espaco-multiuso-pavilhao-parque-de-exposicao-acessibilidade/expominas-bh",
+        "checkedAt": "16/11/2026",
+        "photoCredit": "Fotografia do espaço, via fonte oficial indicada."
+      }
+    },
+    {
+      "title": "Centro Cultural UFMG",
+      "category": "Centro cultural",
+      "location": "Avenida Santos Dumont, 174, Centro, Belo Horizonte",
+      "description": "Espaço cultural da UFMG com exposições e atividades abertas ao público. Consulte os horários de cada programação.",
+      "image_path": "/images/editorial-local-ufmg.webp",
+      "info": {
+        "price": "unknown",
+        "priceNote": "Consulte as condições de cada atividade; consumo e compras à parte.",
+        "hours": "Terça a sexta, 9h–20h; sábados, domingos e feriados, 9h–17h. Fechado às segundas.",
+        "tags": [
+          "Cultura"
+        ],
+        "sourceUrl": "https://www.ufmg.br/procult/espacos-de-cultura/centro-cultural-ufmg/",
+        "checkedAt": "16/11/2026",
+        "photoCredit": "Acervo UFMG, via Pró-Reitoria de Cultura da UFMG."
+      }
+    },
+    {
+      "title": "Palácio das Artes",
+      "category": "Centro cultural",
+      "location": "Avenida Afonso Pena, 1537, Centro, Belo Horizonte",
+      "description": "Complexo cultural com galerias e teatros no Centro. Exposições selecionadas são gratuitas; espetáculos podem ter condições próprias.",
+      "image_path": "/images/editorial-bienal.webp",
+      "info": {
+        "price": "unknown",
+        "priceNote": "Consulte as condições de cada atividade; consumo e compras à parte.",
+        "hours": "Funcionamento conforme programação. Confira a fonte oficial.",
+        "tags": [
+          "Cultura"
+        ],
+        "sourceUrl": "https://bienal.org.br/agenda/itinerancia-36a-bienal-belo-horizonte/",
+        "checkedAt": "16/11/2026",
+        "photoCredit": "Imagem / arte de divulgação da programação, via fonte oficial; não necessariamente fotografia do espaço."
+      }
+    },
+    {
+      "title": "Praça do Papa",
+      "category": "Praça",
+      "location": "Praça Israel Pinheiro, Mangabeiras, Belo Horizonte",
+      "description": "Praça ao ar livre que recebe encontros e eventos culturais. Consulte as condições de cada programação e os avisos antes de sair.",
+      "image_path": "/images/editorial-local-papa.webp",
+      "info": {
+        "price": "free",
+        "priceNote": "Consulte as condições de cada atividade; consumo e compras à parte.",
+        "hours": "Funcionamento conforme programação. Confira a fonte oficial.",
+        "tags": [
+          "Cultura",
+          "Família",
+          "Ao ar livre"
+        ],
+        "sourceUrl": "https://portalbelohorizonte.com.br/o-que-fazer/ao-ar-livre-e-esportes/pracas/praca-israel-pinheiro-praca-do-papa",
+        "checkedAt": "16/11/2026",
+        "photoCredit": "Fotografia do espaço, via fonte oficial indicada."
+      }
+    },
+    {
+      "title": "Sesc Palladium",
+      "category": "Centro cultural",
+      "location": "Rua Rio de Janeiro, 1046, Centro, Belo Horizonte",
+      "description": "Centro cultural e teatro com programação variada. A gratuidade ou cobrança depende do evento selecionado.",
+      "image_path": "/images/editorial-local-sesc.webp",
+      "info": {
+        "price": "unknown",
+        "priceNote": "Consulte as condições de cada atividade; consumo e compras à parte.",
+        "hours": "Funcionamento conforme programação. Confira a fonte oficial.",
+        "tags": [
+          "Cultura"
+        ],
+        "sourceUrl": "https://sescmg.com.br/servico/shows-e-espetaculos-no-sesc-palladium/",
+        "checkedAt": "16/11/2026",
+        "photoCredit": "Fotografia de apresentação no Sesc Palladium, via Sesc em Minas."
+      }
+    },
+    {
+      "title": "Feira Pindorama",
+      "category": "Feira gastronômica",
+      "location": "Rua Rio Petrópolis, esquina com Rua Jacareí, Pindorama, Belo Horizonte",
+      "description": "Feira de rua com gastronomia, artesanato e convivência comunitária. A visita é gratuita; produtos e consumo são pagos à parte.",
+      "image_path": "/images/editorial-pindorama.webp",
+      "info": {
+        "price": "free",
+        "priceNote": "Consulte as condições de cada atividade; consumo e compras à parte.",
+        "hours": "Quintas-feiras, 18h–22h.",
+        "tags": [
+          "Cultura",
+          "Família",
+          "Ao ar livre"
+        ],
+        "sourceUrl": "https://portalbelohorizonte.com.br/eventos/feira/gastronomia/feira-pindorama",
+        "checkedAt": "16/11/2026",
+        "photoCredit": "Imagem / arte de divulgação da programação, via fonte oficial; não necessariamente fotografia do espaço."
+      }
+    },
+    {
+      "title": "Feira da Afonso Pena — Feira Hippie",
+      "category": "Feira de artesanato",
+      "location": "Avenida Afonso Pena, Centro, Belo Horizonte",
+      "description": "Feira tradicional de artesanato e gastronomia. A circulação pela feira é gratuita; compras e consumo são pagos à parte.",
+      "image_path": "/images/editorial-hippie.webp",
+      "info": {
+        "price": "free",
+        "priceNote": "Consulte as condições de cada atividade; consumo e compras à parte.",
+        "hours": "Domingos, 8h–14h.",
+        "tags": [
+          "Cultura",
+          "Família",
+          "Ao ar livre"
+        ],
+        "sourceUrl": "https://portalbelohorizonte.com.br/o-que-fazer/comer-e-beber/feira/feira-de-artes-artesanato-e-produtores-de-variedades-de-belo-horizonte",
+        "checkedAt": "16/11/2026",
+        "photoCredit": "Imagem / arte de divulgação da programação, via fonte oficial; não necessariamente fotografia do espaço."
+      }
+    },
+    {
+      "title": "Serraria Souza Pinto",
+      "category": "Espaço de eventos",
+      "location": "Avenida Assis Chateaubriand, 809, Centro, Belo Horizonte",
+      "description": "Espaço de eventos no Centro de BH. Consulte a agenda e as condições de acesso de cada evento.",
+      "image_path": "/images/editorial-som.webp",
+      "info": {
+        "price": "unknown",
+        "priceNote": "Consulte as condições de cada atividade; consumo e compras à parte.",
+        "hours": "Funcionamento conforme programação. Confira a fonte oficial.",
+        "tags": [
+          "Cultura"
+        ],
+        "sourceUrl": "https://portalbelohorizonte.com.br/eventos/show/musica/festival-som-clube-2026-edicao-localiza",
+        "checkedAt": "16/11/2026",
+        "photoCredit": "Imagem / arte de divulgação da programação, via fonte oficial; não necessariamente fotografia do espaço."
+      }
+    }
+  ],
+  "events": [
+    {
+      "title": "37ª Feira Nacional de Artesanato",
+      "venue": "Expominas BH",
+      "category": "Feira",
+      "starts_at": "2026-12-02T14:00:00-03:00",
+      "ends_at": "2026-12-06T22:00:00-03:00",
+      "description": "Artesanato brasileiro, técnicas e produção autoral reunidos no Expominas. O organizador anuncia ingresso de R$ 20; confira descontos, gratuidades e horários de cada dia antes de comprar. O cadastro abrange a temporada, não funcionamento contínuo.",
+      "image_path": "/images/editorial-fna.webp",
+      "info": {
+        "price": "paid",
+        "priceNote": "Ingresso anunciado pelo organizador: R$ 20. Consulte meia-entrada, gratuidades e taxas.",
+        "hours": "2 a 4/12: 14h–22h; 5/12: 10h–22h. Para 6/12, confirme o encerramento: fontes divergem entre 21h e 22h.",
+        "tags": [
+          "Família",
+          "Cultura",
+          "Feiras"
+        ],
+        "sourceUrl": "https://portalbelohorizonte.com.br/eventos/feira/artesanato/37a-feira-nacional-de-artesanato",
+        "checkedAt": "16/11/2026",
+        "bookingUrl": "https://feiranacionaldeartesanato.com.br/dados-do-evento/",
+        "photoCredit": "Imagem / arte de divulgação, via fonte oficial indicada.",
+        "weekdays": [
+          0,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    },
+    {
+      "title": "A Foz do Contato",
+      "venue": "Centro Cultural UFMG",
+      "category": "Exposição",
+      "starts_at": "2026-11-06T19:00:00-03:00",
+      "ends_at": "2026-12-06T17:00:00-03:00",
+      "description": "Exposição coletiva com obras que aproximam arte, natureza e águas. Cerâmica, pintura e fotografia no Centro Cultural UFMG. Classificação livre e entrada gratuita. Confira os dias de visitação; o período representa a temporada.",
+      "image_path": "/images/editorial-foz.webp",
+      "info": {
+        "price": "free",
+        "priceNote": "Entrada gratuita; sujeito à lotação.",
+        "hours": "Terça a sexta, 9h–20h; sábados, domingos e feriados, 9h–17h. Até 6/12/2026.",
+        "tags": [
+          "Família",
+          "Cultura"
+        ],
+        "sourceUrl": "https://portalbelohorizonte.com.br/eventos/exposicao/artes-visuais/exposicao-foz-do-contato",
+        "checkedAt": "16/11/2026",
+        "bookingUrl": "",
+        "photoCredit": "Imagem / arte de divulgação, via fonte oficial indicada.",
+        "weekdays": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    },
+    {
+      "title": "36ª Bienal de São Paulo — itinerância BH",
+      "venue": "Palácio das Artes",
+      "category": "Exposição",
+      "starts_at": "2026-10-03T09:30:00-03:00",
+      "ends_at": "2026-12-06T21:00:00-03:00",
+      "description": "Recorte da Bienal de São Paulo no Palácio das Artes, com trabalhos de artistas de diferentes territórios. Livre para todos os públicos e entrada gratuita. O intervalo indica a temporada; a visita segue os horários das galerias.",
+      "image_path": "/images/editorial-bienal.webp",
+      "info": {
+        "price": "free",
+        "priceNote": "Entrada gratuita; sujeito à lotação.",
+        "hours": "Terça a sábado, 9h30–21h; domingos, 17h–21h. Até 6/12/2026.",
+        "tags": [
+          "Família",
+          "Cultura"
+        ],
+        "sourceUrl": "https://bienal.org.br/agenda/itinerancia-36a-bienal-belo-horizonte/",
+        "checkedAt": "16/11/2026",
+        "bookingUrl": "",
+        "photoCredit": "Imagem / arte de divulgação, via fonte oficial indicada.",
+        "weekdays": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    },
+    {
+      "title": "55ª Mostra Japão",
+      "venue": "Praça do Papa",
+      "category": "Festival",
+      "starts_at": "2026-11-20T11:00:00-03:00",
+      "ends_at": "2026-11-22T22:00:00-03:00",
+      "description": "Cultura e gastronomia orientais na Praça do Papa, com apresentações de taiko, música e cosplay. Entrada gratuita com doação voluntária de alimento. Consumo nas barracas é pago à parte.",
+      "image_path": "/images/editorial-japao.webp",
+      "info": {
+        "price": "free",
+        "priceNote": "Gratuita. Doação voluntária de 1 kg de alimento não perecível; consumo à parte.",
+        "hours": "20, 21 e 22/11/2026, 11h–22h em cada dia.",
+        "tags": [
+          "Família",
+          "Cultura",
+          "Gastronomia"
+        ],
+        "sourceUrl": "https://portalbelohorizonte.com.br/eventos/festival/cultural/mostra-japao-2026",
+        "checkedAt": "16/11/2026",
+        "bookingUrl": "",
+        "photoCredit": "Imagem / arte de divulgação, via fonte oficial indicada.",
+        "weekdays": [
+          0,
+          5,
+          6
+        ]
+      }
+    },
+    {
+      "title": "Fest in Brasil–África",
+      "venue": "Sesc Palladium",
+      "category": "Festival",
+      "starts_at": "2026-11-28T19:30:00-03:00",
+      "ends_at": "2026-11-28T23:00:00-03:00",
+      "description": "Festival de intercâmbio musical entre Brasil e países africanos de língua portuguesa. Consulte o programa do dia escolhido e os setores disponíveis na bilheteria oficial.",
+      "image_path": "/images/editorial-africa.webp",
+      "info": {
+        "price": "paid",
+        "priceNote": "Ingressos pagos, com valores conforme setor e modalidade. Confira preço atualizado e taxas na bilheteria oficial.",
+        "hours": "28/11 às 19h30; 29/11 às 18h. Este card corresponde à data indicada.",
+        "tags": [
+          "Cultura",
+          "Música"
+        ],
+        "sourceUrl": "https://portalbelohorizonte.com.br/eventos/festival/cultural/fest-brasil-africa-em-belo-horizonte",
+        "checkedAt": "16/11/2026",
+        "bookingUrl": "https://bileto.sympla.com.br/event/128946",
+        "photoCredit": "Imagem / arte de divulgação, via fonte oficial indicada."
+      }
+    },
+    {
+      "title": "Fest in Brasil–África",
+      "venue": "Sesc Palladium",
+      "category": "Festival",
+      "starts_at": "2026-11-29T18:00:00-03:00",
+      "ends_at": "2026-11-29T23:00:00-03:00",
+      "description": "Festival de intercâmbio musical entre Brasil e países africanos de língua portuguesa. Consulte o programa do dia escolhido e os setores disponíveis na bilheteria oficial.",
+      "image_path": "/images/editorial-africa.webp",
+      "info": {
+        "price": "paid",
+        "priceNote": "Ingressos pagos, com valores conforme setor e modalidade. Confira preço atualizado e taxas na bilheteria oficial.",
+        "hours": "28/11 às 19h30; 29/11 às 18h. Este card corresponde à data indicada.",
+        "tags": [
+          "Cultura",
+          "Música"
+        ],
+        "sourceUrl": "https://portalbelohorizonte.com.br/eventos/festival/cultural/fest-brasil-africa-em-belo-horizonte",
+        "checkedAt": "16/11/2026",
+        "bookingUrl": "https://bileto.sympla.com.br/event/128946",
+        "photoCredit": "Imagem / arte de divulgação, via fonte oficial indicada."
+      }
+    },
+    {
+      "title": "Feira Pindorama — gastronomia e artesanato",
+      "venue": "Feira Pindorama",
+      "category": "Feira",
+      "starts_at": "2026-11-19T18:00:00-03:00",
+      "ends_at": "2026-11-19T22:00:00-03:00",
+      "description": "Gastronomia regional e artesanato de produtores locais em uma feira comunitária ao ar livre. Acesso gratuito, com consumo e compras à parte. Data derivada da programação regular às quintas; confirme avisos de alterações ou chuva.",
+      "image_path": "/images/editorial-pindorama.webp",
+      "info": {
+        "price": "free",
+        "priceNote": "Entrada gratuita; sujeito à lotação.",
+        "hours": "Quintas-feiras, 18h–22h.",
+        "tags": [
+          "Família",
+          "Feiras",
+          "Gastronomia",
+          "Ao ar livre"
+        ],
+        "sourceUrl": "https://portalbelohorizonte.com.br/eventos/feira/gastronomia/feira-pindorama",
+        "checkedAt": "16/11/2026",
+        "bookingUrl": "",
+        "photoCredit": "Imagem / arte de divulgação, via fonte oficial indicada."
+      }
+    },
+    {
+      "title": "Feira Pindorama — gastronomia e artesanato",
+      "venue": "Feira Pindorama",
+      "category": "Feira",
+      "starts_at": "2026-11-26T18:00:00-03:00",
+      "ends_at": "2026-11-26T22:00:00-03:00",
+      "description": "Gastronomia regional e artesanato de produtores locais em uma feira comunitária ao ar livre. Acesso gratuito, com consumo e compras à parte. Data derivada da programação regular às quintas; confirme avisos de alterações ou chuva.",
+      "image_path": "/images/editorial-pindorama.webp",
+      "info": {
+        "price": "free",
+        "priceNote": "Entrada gratuita; sujeito à lotação.",
+        "hours": "Quintas-feiras, 18h–22h.",
+        "tags": [
+          "Família",
+          "Feiras",
+          "Gastronomia",
+          "Ao ar livre"
+        ],
+        "sourceUrl": "https://portalbelohorizonte.com.br/eventos/feira/gastronomia/feira-pindorama",
+        "checkedAt": "16/11/2026",
+        "bookingUrl": "",
+        "photoCredit": "Imagem / arte de divulgação, via fonte oficial indicada."
+      }
+    },
+    {
+      "title": "Domingo na Feira da Afonso Pena",
+      "venue": "Feira da Afonso Pena — Feira Hippie",
+      "category": "Feira",
+      "starts_at": "2026-11-22T08:00:00-03:00",
+      "ends_at": "2026-11-22T14:00:00-03:00",
+      "description": "Um domingo entre artesanato, produção local e sabores mineiros na feira tradicional da Avenida Afonso Pena. Circulação gratuita; consumo e compras à parte. Data baseada no funcionamento regular aos domingos, sujeita a avisos da organização.",
+      "image_path": "/images/editorial-hippie.webp",
+      "info": {
+        "price": "free",
+        "priceNote": "Entrada gratuita; sujeito à lotação.",
+        "hours": "Domingos, 8h–14h.",
+        "tags": [
+          "Família",
+          "Feiras",
+          "Ao ar livre",
+          "Gastronomia"
+        ],
+        "sourceUrl": "https://portalbelohorizonte.com.br/o-que-fazer/comer-e-beber/feira/feira-de-artes-artesanato-e-produtores-de-variedades-de-belo-horizonte",
+        "checkedAt": "16/11/2026",
+        "bookingUrl": "",
+        "photoCredit": "Imagem / arte de divulgação, via fonte oficial indicada."
+      }
+    },
+    {
+      "title": "Domingo na Feira da Afonso Pena",
+      "venue": "Feira da Afonso Pena — Feira Hippie",
+      "category": "Feira",
+      "starts_at": "2026-11-29T08:00:00-03:00",
+      "ends_at": "2026-11-29T14:00:00-03:00",
+      "description": "Um domingo entre artesanato, produção local e sabores mineiros na feira tradicional da Avenida Afonso Pena. Circulação gratuita; consumo e compras à parte. Data baseada no funcionamento regular aos domingos, sujeita a avisos da organização.",
+      "image_path": "/images/editorial-hippie.webp",
+      "info": {
+        "price": "free",
+        "priceNote": "Entrada gratuita; sujeito à lotação.",
+        "hours": "Domingos, 8h–14h.",
+        "tags": [
+          "Família",
+          "Feiras",
+          "Ao ar livre",
+          "Gastronomia"
+        ],
+        "sourceUrl": "https://portalbelohorizonte.com.br/o-que-fazer/comer-e-beber/feira/feira-de-artes-artesanato-e-produtores-de-variedades-de-belo-horizonte",
+        "checkedAt": "16/11/2026",
+        "bookingUrl": "",
+        "photoCredit": "Imagem / arte de divulgação, via fonte oficial indicada."
+      }
+    },
+    {
+      "title": "Festival Som Clube — edição Localiza",
+      "venue": "Serraria Souza Pinto",
+      "category": "Festival",
+      "starts_at": "2026-11-29T12:00:00-03:00",
+      "ends_at": "2026-11-29T23:00:00-03:00",
+      "description": "Festival de música brasileira com show de Roberta Sá e outras apresentações na Serraria Souza Pinto. A entrada é gratuita com retirada de ingresso e sujeita à lotação. Confira a programação e a disponibilidade na Eventim.",
+      "image_path": "/images/editorial-som.webp",
+      "info": {
+        "price": "free",
+        "priceNote": "Gratuito, com retirada de ingresso. Sujeito à lotação.",
+        "hours": "29/11/2026, a partir das 12h; programação conforme organizador.",
+        "tags": [
+          "Cultura",
+          "Música"
+        ],
+        "sourceUrl": "https://portalbelohorizonte.com.br/eventos/show/musica/festival-som-clube-2026-edicao-localiza",
+        "checkedAt": "16/11/2026",
+        "bookingUrl": "https://www.eventim.com.br/event/som-clube-serraria-souza-pinto-22360612/",
+        "photoCredit": "Imagem / arte de divulgação, via fonte oficial indicada."
+      }
+    }
+  ]
+}

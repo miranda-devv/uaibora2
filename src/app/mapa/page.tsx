@@ -1,0 +1,1 @@
+import DiscoveryHome from '@/components/discovery-home';export default function Page(){return <DiscoveryHome view="map"/>;}

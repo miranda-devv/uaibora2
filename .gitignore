@@ -60,3 +60,6 @@ backup_google_auth/
 next-env.d.ts
 
 /app/generated/prisma
+
+# Uploaded user photographs (local presentation)
+/public/uploads/

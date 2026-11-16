@@ -1,0 +1,1 @@
+(async()=>{const r=await fetch(process.env.NEXT_PUBLIC_SUPABASE_URL+'/auth/v1/settings',{headers:{apikey:process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY},signal:AbortSignal.timeout(15000)});const j=await r.json();console.log('Auth HTTP',r.status,'Google habilitado:',j.external?.google===true);})().catch(()=>{console.log('Rede indisponível');process.exitCode=1});

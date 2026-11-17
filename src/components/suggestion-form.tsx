@@ -21,13 +21,13 @@ export function SuggestionForm({onPublish, onComplete}: {
     finally { setBusy(false); }
   }
   return <form className="form-stack" onSubmit={submit}>
-    <p>Sua dica será pública. Conte pra gente o que faz esse lugar ser especial!</p>
+    <p>Sua dica será analisada pela equipe antes de aparecer para a comunidade. Conte pra gente o que faz esse lugar ser especial!</p>
     <label>Nome do lugar<input name="title" required minLength={3} maxLength={80} disabled={busy}/></label>
     <label>Categoria<select name="category" required disabled={busy}>{categories.map(category => <option key={category}>{category}</option>)}</select></label>
     <label>Onde fica?<input name="location" required minLength={3} maxLength={120} placeholder="Endereço ou bairro em Belo Horizonte" disabled={busy}/></label>
     <label>Por que vale o rolê?<textarea name="description" required minLength={15} maxLength={1000} rows={4} disabled={busy}/></label>
     <small>Compartilhe apenas informações do lugar, sem telefones, e-mails ou outros dados pessoais.</small>
     {error && <p role="alert" className="form-error">{error}</p>}
-    <button className="primary-button" disabled={busy}>{busy ? "Publicando…" : "Publicar sugestão"}</button>
+    <button className="primary-button" disabled={busy}>{busy ? "Enviando…" : "Enviar sugestão"}</button>
   </form>;
 }

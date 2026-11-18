@@ -117,6 +117,19 @@ export default function DiscoveryHome({view="home"}:{view?:"home"|"events"|"plac
   function accountComplete() {
     community.setRecovery(false); setPanel(null); setToast("Tudo certo com sua conta. Bora descobrir BH!");
   }
+  function suggestionComplete() {
+    setPanel(null);
+    setFilter("Todos");
+    setQuery("");
+    setFee("all");
+    setAudience("");
+    setWhen("all");
+    setSort("popular");
+    setToast("Sua dica foi enviada para análise. Valeu demais!");
+    // A dica pendente não deve trocar a página inicial por uma lista vazia.
+    if (view !== "home") router.push("/");
+    else window.scrollTo({top: 0, behavior: "instant"});
+  }
   async function signOut() {
     if (!community.client) return;
     const {error} = await community.client.auth.signOut();
@@ -137,6 +150,7 @@ export default function DiscoveryHome({view="home"}:{view?:"home"|"events"|"plac
         <button className="nav-item" onClick={()=>chooseFilter("Lugares")}><Icon name="pin"/>Lugares</button>
         <button className="nav-item" onClick={() => openPanel("suggest")}><Icon name="bulb"/>Sugerir Local</button>
         <button className="nav-item" onClick={() => openPanel("account")}><Icon name="user"/>Meu Perfil</button>
+        <Link className="nav-item" href="/feira-tecnica"><Icon name="bulb"/>Feira Técnica</Link>
         <button className="nav-item admin" onClick={() => openPanel("admin")}><Icon name="crown"/>Área Admin</button>
       </nav>
       <div className="sidebar-bottom"><p><Icon name="pin" size={17}/>Belo Horizonte · MG</p><span>Feito com um tiquinho de mineiridade.</span></div>
@@ -170,7 +184,7 @@ export default function DiscoveryHome({view="home"}:{view?:"home"|"events"|"plac
           <div className="quick-panel"><h2>O que você procura?</h2><div className="quick-grid">{tabs.map(([label,icon])=><button key={label} aria-pressed={filter===label} onClick={()=>chooseFilter(label)}><Icon name={icon} size={19}/>{label}</button>)}</div></div>
           <svg className="hero-wave" viewBox="0 0 1200 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70Q240 80 410 50T740 65T1200 0V80H0Z" fill="#b73c25"/><path d="M0 78Q200 40 460 70T930 45T1200 60V80H0Z" fill="#541c15"/></svg>
         </section></>}
-        {view!=="map"&&<div className="explore-nav"><Link href="/eventos">Mais eventos ↗</Link><Link href="/lugares">Explorar lugares ↗</Link><Link href="/mapa">⌖ Perto de você</Link><button onClick={()=>{if(!community.user)openPanel("account");else setToast("A IA do Uai Bora está em desenvolvimento. Por enquanto, personalize seus interesses no perfil.");}}>✦ Meu guia com IA <small>em breve</small></button></div>}
+        {view!=="map"&&<div className="explore-nav"><Link href="/eventos">Mais eventos ↗</Link><Link href="/lugares">Explorar lugares ↗</Link><Link href="/mapa">⌖ Perto de você</Link><Link href="/feira-tecnica" className="fair-home-link">✦ Feira Técnica <small>Conta seu rolê!</small></Link><button onClick={()=>{if(!community.user)openPanel("account");else setToast("A IA do Uai Bora está em desenvolvimento. Por enquanto, personalize seus interesses no perfil.");}}>✦ Meu guia com IA <small>em breve</small></button></div>}
         {(view==="events"||view==="places")&&<div className="catalog-filters"><label>Entrada<select value={fee} onChange={e=>setFee(e.target.value)}><option value="all">Todas</option><option value="free">✓ Gratuito</option><option value="paid">$ Pago</option></select></label><label>Seu tipo de rolê<select value={audience} onChange={e=>setAudience(e.target.value)}><option value="">Todos os públicos</option>{interests.map(t=><option key={t}>{t}</option>)}</select></label>{view==="events"&&<label>Quando<select value={when} onChange={e=>setWhen(e.target.value)}><option value="all">Toda a programação</option><option value="today">Começa hoje</option></select></label>}<label>Ordenar<select value={sort} onChange={e=>setSort(e.target.value)}><option value="popular">Mais favoritados</option><option value="date">Data de início</option></select></label><button className="text-link" onClick={()=>{setFee("all");setAudience("");setWhen("all");setQuery("");}}>Limpar filtros</button></div>}
         <div className="discovery-toolbar"><span className="toolbar-caption"><Icon name="pin" size={14}/>Belo Horizonte · MG <span>Encontre seu próximo rolê.</span></span><button className="text-link" onClick={()=>void catalog.refresh()} disabled={catalog.loading}>{catalog.loading?'Carregando…':'Atualizar catálogo'}</button></div>
         {catalog.error&&<p className="form-error" role="alert">{catalog.error}</p>}
@@ -216,7 +230,7 @@ export default function DiscoveryHome({view="home"}:{view?:"home"|"events"|"plac
       </>}
     </Modal>}
     {panel === "suggest" && <Modal title="Qual cantinho merece um bora?" onClose={() => setPanel(null)}>
-      {community.user ? <SuggestionForm onPublish={community.publishSuggestion} onComplete={() => { setPanel(null); setFilter("Sugestões"); setQuery(""); setToast("Sua dica foi enviada para análise. Valeu demais!"); }}/>
+      {community.user ? <SuggestionForm onPublish={community.publishSuggestion} onComplete={suggestionComplete}/>
         : community.configured ? <><p>Entre na sua conta para compartilhar seu lugar favorito com a comunidade.</p><button className="primary-button" onClick={() => openPanel("account")}>Entrar ou criar conta</button></> : <AccountForm client={null} onComplete={accountComplete}/>}
     </Modal>}
     {details && <Modal title={details.title} onClose={() => setDetails(null)}>
